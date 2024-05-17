@@ -220,6 +220,7 @@ RegisterNetEvent("o_gang_creator:openEditgang",function(selectGang)
                     if input then
                         infogang.label = input[1]
                     end
+                    TriggerServerEvent("e_gangcreator:EditGang","label",infogang.label,infogang.name)
                     TriggerEvent("o_gang_creator:openEditgang",infogang)
                 end
             },
@@ -238,6 +239,7 @@ RegisterNetEvent("o_gang_creator:openEditgang",function(selectGang)
                         Wait(1)
                     end
                     lib.hideTextUI()
+                    TriggerServerEvent("e_gangcreator:EditGang","managePos",infogang.managePos,infogang.name)
                     TriggerEvent("o_gang_creator:openEditgang",infogang)
                 end
             },
@@ -251,6 +253,7 @@ RegisterNetEvent("o_gang_creator:openEditgang",function(selectGang)
                     if input then
                         infogang.managePassword = input[1]
                     end
+                    TriggerServerEvent("e_gangcreator:EditGang","managePassword",infogang.managePassword,infogang.name)
                     TriggerEvent("o_gang_creator:openEditgang",infogang)
                 end
             },
@@ -271,6 +274,7 @@ RegisterNetEvent("o_gang_creator:openEditgang",function(selectGang)
                         Wait(1)
                     end
                     lib.hideTextUI()
+                    TriggerServerEvent("e_gangcreator:EditGang","stashPos",infogang.stashPos,infogang.name)
                     TriggerEvent("o_gang_creator:openEditgang",infogang)
                 end
             },
@@ -284,6 +288,7 @@ RegisterNetEvent("o_gang_creator:openEditgang",function(selectGang)
                     if input then
                         infogang.stashPassword = input[1]
                     end
+                    TriggerServerEvent("e_gangcreator:EditGang","stashPassword",infogang.stashPassword,infogang.name)
                     TriggerEvent("o_gang_creator:openEditgang",infogang)
                 end
             },

@@ -38,7 +38,19 @@ RegisterNetEvent("e_gangcreator:EditGang",function (key,newValue,lastValue)
         MySQL.update.await('UPDATE `addon_account_data` SET account_name = ? WHERE account_name = ?',{"gang_"..newValue,"gang_"..lastValue})
         TriggerClientEvent('ox_lib:notify', source, {title = Translate("update_gang"),type ='success'})
     elseif key == "label" then
-
-    elseif key == "grade" then
+        MySQL.update.await('UPDATE `jobs2` SET label = ? WHERE name = ?',{newValue,lastValue})
+        TriggerClientEvent('ox_lib:notify', source, {title = Translate("update_gang"),type ='success'})
+    elseif key == "managePos" then
+        MySQL.update.await('UPDATE `jobs2` SET manage_pos = ? WHERE name = ?',{json.encode(newValue),lastValue})
+        TriggerClientEvent('ox_lib:notify', source, {title = Translate("update_gang"),type ='success'})
+    elseif key == "stashPos" then
+        MySQL.update.await('UPDATE `jobs2` SET stash_pos = ? WHERE name = ?',{json.encode(newValue),lastValue})
+        TriggerClientEvent('ox_lib:notify', source, {title = Translate("update_gang"),type ='success'})
+    elseif key == "stashPassword" then
+        MySQL.update.await('UPDATE `jobs2` SET stash_password = ? WHERE name = ?',{newValue,lastValue})
+        TriggerClientEvent('ox_lib:notify', source, {title = Translate("update_gang"),type ='success'})
+    elseif key == "managePassword" then
+        MySQL.update.await('UPDATE `jobs2` SET manage_password = ? WHERE name = ?',{newValue,lastValue})
+        TriggerClientEvent('ox_lib:notify', source, {title = Translate("update_gang"),type ='success'})
     end
 end)
