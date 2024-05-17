@@ -1,5 +1,3 @@
-
-
 lib.callback.register("o_gang_creator:GetPosPlayer",function()
 	local playerId = PlayerPedId()
 	while true do

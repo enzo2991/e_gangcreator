@@ -9,6 +9,7 @@ Locales['en'] = {
     -- gang creator menu 
     ["gang_creator_title"] = "building the gang",
     ["name_gang"] = "gang name",
+    ["label_gang"] = "gang label",
     ["manage_gang_pos"] = "gang management position",
     ["manage_gang_password"] = "gang management password",
     ["stash_gang_pos"] = "gang box position",
@@ -25,6 +26,8 @@ Locales['en'] = {
     ["metadata_manage_password"] = "password manage",
     -- lib
     ["set_location"] = "[E] - set position",
-    ["notify_no_permissions"] = "you don't have permissions to open this menu"
+    ["notify_no_permissions"] = "you don't have permissions to open this menu",
+    ["insert_db"] = "the gang is created",
+    ["update_gang"] = "the gang is update"
     
 }

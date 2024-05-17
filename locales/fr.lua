@@ -9,6 +9,7 @@ Locales['fr'] = {
     -- gang creator menu 
     ["gang_creator_title"] = "Construction du gang",
     ["name_gang"] = "Nom de gang",
+    ["label_gang"] = "Appellation du gang",
     ["manage_gang_pos"] = "Position de la gestion du gang",
     ["manage_gang_password"] = "Mot de passe de la gestion du gang",
     ["stash_gang_pos"] = "Position du coffre de gang",
@@ -18,12 +19,14 @@ Locales['fr'] = {
     ["input_password_stash_gang"] = "saisir le mot de passe pour le coffre",
     ["create_gang"] = "Creer le gang",
     -- gang edit menu
-    ["metadata_label"] = "appellation",
+    ["metadata_label"] = "Appellation",
     ["metadata_money"] = "Argent",
     ["metadata_grade"] = "Grade",
     ["metadata_stash_password"] = "mot de passe du coffre",
     ["metadata_manage_password"] = "mot de passe du gestionnaire",
     -- lib
     ["set_location"] = "[E] - mettre la position",
-    ["notify_no_permissions"] = "tu n\'as pas la permissions pour ouvrir ce menu"
+    ["notify_no_permissions"] = "tu n\'as pas la permissions pour ouvrir ce menu",
+    ["insert_db"] = "le gang est creer",
+    ["update_gang"] = "le gang est mis a jour"
 }
