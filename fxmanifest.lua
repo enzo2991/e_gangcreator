@@ -19,5 +19,6 @@ server_scripts {
     'server/commands.lua',
     '@oxmysql/lib/MySQL.lua',
     'server/callback.lua',
-    'server/function.lua'
+    'server/function.lua',
+    'server/stash.lua'
 }
