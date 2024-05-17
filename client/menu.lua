@@ -25,7 +25,6 @@ RegisterNetEvent("o_gang_creator:openListGang",function()
     local gangs = {}
     local listgang = lib.callback.await('o_gang_creator:getGangs', false)
 
-
     for _,v in pairs(listgang) do
         gangs[#gangs+1] = {
             title = v.name,
@@ -290,6 +289,21 @@ RegisterNetEvent("o_gang_creator:openEditgang",function(selectGang)
                     end
                     TriggerServerEvent("e_gangcreator:EditGang","stashPassword",infogang.stashPassword,infogang.name)
                     TriggerEvent("o_gang_creator:openEditgang",infogang)
+                end
+            },
+            {
+                title = Translate("delete_gang"),
+                onSelect = function()
+                    local alert = lib.alertDialog({
+                        header = "Suppression du gang "..infogang.label,
+                        content = "Validation de suppression du gang",
+                        centered = true,
+                        cancel = true
+                    })
+
+                    if alert == "confirm" then
+                        TriggerServerEvent("e_gangcreator:deleteGang",infogang)
+                    end
                 end
             },
         }

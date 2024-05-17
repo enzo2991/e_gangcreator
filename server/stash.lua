@@ -1,5 +1,5 @@
 if Config.useStash then
-    Citizen.CreateThread(function ()
+    function RestartScriptStash()
         if GetResourceState("e_gangcreator_stash")  == "started" then
             StopResource("e_gangcreator_stash")
             Citizen.Wait(1000)
@@ -7,5 +7,5 @@ if Config.useStash then
         else 
             StartResource("e_gangcreator_stash")
         end
-    end)
+    end
 end

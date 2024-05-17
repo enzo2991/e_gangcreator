@@ -22,11 +22,13 @@ Locales['fr'] = {
     ["metadata_label"] = "Appellation",
     ["metadata_money"] = "Argent",
     ["metadata_grade"] = "Grade",
-    ["metadata_stash_password"] = "mot de passe du coffre",
-    ["metadata_manage_password"] = "mot de passe du gestionnaire",
+    ["metadata_stash_password"] = "Mot de passe du coffre",
+    ["metadata_manage_password"] = "Mot de passe du gestionnaire",
+    ["delete_gang"] = "Supprimer le gang",
     -- lib
     ["set_location"] = "[E] - mettre la position",
     ["notify_no_permissions"] = "tu n\'as pas la permissions pour ouvrir ce menu",
-    ["insert_db"] = "le gang est creer",
-    ["update_gang"] = "le gang est mis a jour"
+    ["insert_db"] = "Le gang est creer",
+    ["update_gang"] = "Le gang est mis a jour",
+    ["notify_delete_gang"] = "Le gang est Supprimer"
 }

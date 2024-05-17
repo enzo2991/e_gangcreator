@@ -24,10 +24,12 @@ Locales['en'] = {
     ["metadata_grade"] = "Grade",
     ["metadata_stash_password"] = "password stash",
     ["metadata_manage_password"] = "password manage",
+    ["delete_gang"] = "Delete Gang",
     -- lib
     ["set_location"] = "[E] - set position",
     ["notify_no_permissions"] = "you don't have permissions to open this menu",
     ["insert_db"] = "the gang is created",
-    ["update_gang"] = "the gang is update"
+    ["update_gang"] = "the gang is update",
+    ["notify_delete_gang"] = "the gang is delete"
     
 }
