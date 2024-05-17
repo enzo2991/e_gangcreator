@@ -1,11 +1,12 @@
 if Config.useStash then
     function RestartScriptStash()
-        if GetResourceState("e_gangcreator_stash")  == "started" then
-            StopResource("e_gangcreator_stash")
+        local nameRessource = Config.ressourceStashName
+        if GetResourceState(nameRessource)  == "started" then
+            StopResource(nameRessource)
             Citizen.Wait(1000)
-            StartResource("e_gangcreator_stash")
+            StartResource(nameRessource)
         else 
-            StartResource("e_gangcreator_stash")
+            StartResource(nameRessource)
         end
     end
 end
