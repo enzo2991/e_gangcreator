@@ -54,7 +54,7 @@ end)
 
 RegisterNetEvent("o_gang_creator:openCreatorMenu",function()
     local buttonSendgang = true
-    if infogang.name ~= nil and infogang.label ~= nil and infogang.managePos ~= nil and infogang.stashPos ~= nil then
+    if infogang.name ~= nil and infogang.label ~= nil and infogang.managePos ~= nil and infogang.stashPos ~= nil and infogang.managePassword ~= nil and infogang.stashPassword ~= nil then
         buttonSendgang = false
     end
 
